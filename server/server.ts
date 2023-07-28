@@ -9,11 +9,11 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/todos", async (req, res) => {
+app.get("/todos", async (_req, res) => {
   const todos = await Todo.find();
 
   res.status(200).json({ todos });
