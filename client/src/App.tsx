@@ -3,9 +3,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className=" text-sm text-red-400">React App</h1>
-    </div>
+    <>
+      <h1>React App</h1>
+    </>
   );
 }
 
